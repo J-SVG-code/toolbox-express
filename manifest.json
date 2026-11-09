@@ -1,6 +1,7 @@
 {
   "name": "toolbox-express",
   "short_name": "Toolbox",
+  "description": "Herramienta rápida y útil para tus tareas diarias",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
