@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ToolBox Express</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Encabezado -->
+        <header class="app-header">
+            <h1>ToolBox Express</h1>
+            <p>Herramientas rápidas sin salir de tu móvil</p>
+        </header>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <div class="card">
+                <h2>Compresor y Convertidor</h2>
+                <p class="card-desc">Reduce el tamaño de tus fotos o cámbialas de formato al instante.</p>
+
+                <!-- Área de selección -->
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                    <button class="btn-select" onclick="document.getElementById('imageInput').click()">
+                        📁 Seleccionar Imagen
+                    </button>
+                    <span id="fileName">Ninguna imagen seleccionada</span>
+                </div>
+
+                <!-- Opciones de conversión -->
+                <div class="options-group">
+                    <label for="formatSelect">Formato de salida:</label>
+                    <select id="formatSelect">
+                        <option value="image/jpeg">JPEG / JPG</option>
+                        <option value="image/png">PNG</option>
+                        <option value="image/webp">WEBP (Ultra ligero)</option>
+                    </select>
+
+                    <label for="qualityRange">Calidad / Compresión: <span id="qualityVal">80%</span></label>
+                    <input type="range" id="qualityRange" min="10" max="100" value="80">
+                </div>
+
+                <!-- Botón de Acción -->
+                <button class="btn-action" id="processBtn">⚡ Procesar Imagen</button>
+
+                <!-- Vista previa y Descarga -->
+                <div class="result-area" id="resultArea" style="display: none;">
+                    <h3>¡Imagen Lista!</h3>
+                    <p id="sizeInfo"></p>
+                    <a id="downloadBtn" class="btn-download" download="imagen_optimizada">⬇️ Guardar en el Teléfono</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Espacio para Anuncio Banner AdMob (Pie de página) -->
+        <footer class="ad-banner-container">
+            <div class="ad-placeholder">
+                <!-- Aquí se cargará tu anuncio de Google AdMob -->
+                <span>Espacio Publicitario AdMob</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
