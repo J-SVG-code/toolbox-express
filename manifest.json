@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Toolbox Express",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Toolbox",
+  "start_url": "/",
+  "theme_color": "rgb(15, 23, 42)",
+  "description": "Herramienta rápida y útil para tus tareas diarias"
+}
