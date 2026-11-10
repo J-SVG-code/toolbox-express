@@ -1,27 +1,13 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-</head>
-
-<body>
-  
-</body>
-
-</html><!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>ToolBox Express</title>
-    <link rel="stylesheet" href="styles.css">
-<link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
-
     <div class="app-container">
         <!-- Encabezado -->
         <header class="app-header">
@@ -32,9 +18,9 @@
         <!-- Contenido Principal -->
         <main class="main-content">
             <div class="card">
-                <h2>Compresor y Convertidor</h2>
+                <h2>Compresor y Conversor</h2>
                 <p class="card-desc">Reduce el tamaño de tus fotos o cámbialas de formato al instante.</p>
-
+                
                 <!-- Área de selección -->
                 <div class="upload-area" id="uploadArea">
                     <input type="file" id="imageInput" accept="image/*" style="display: none;">
@@ -50,10 +36,10 @@
                     <select id="formatSelect">
                         <option value="image/jpeg">JPEG / JPG</option>
                         <option value="image/png">PNG</option>
-                        <option value="image/webp">WEBP (Ultra ligero)</option>
+                        <option value="image/webp">WEBP (Ultra Ligera)</option>
                     </select>
 
-                    <label for="qualityRange">Calidad / Compresión: <span id="qualityVal">80%</span></label>
+                    <label for="qualityRange">Calidad / Compresión: <span id="qualityVal">80</span>%</label>
                     <input type="range" id="qualityRange" min="10" max="100" value="80">
                 </div>
 
@@ -64,7 +50,7 @@
                 <div class="result-area" id="resultArea" style="display: none;">
                     <h3>¡Imagen Lista!</h3>
                     <p id="sizeInfo"></p>
-                    <a id="downloadBtn" class="btn-download" download="imagen_optimizada">⬇️ Guardar en el Teléfono</a>
+                    <a id="downloadBtn" class="btn-download" download="imagen_optimizada">Guardar en el Teléfono</a>
                 </div>
             </div>
         </main>
@@ -79,13 +65,12 @@
     </div>
 
     <script src="app.js"></script>
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
-      .then(() => console.log('Service Worker registrado con éxito'))
-      .catch(err => console.log('Error al registrar el Service Worker', err));
-  }
-  </script>
-  
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(() => console.log('Service Worker registrado con éxito'))
+                .catch(err => console.log('Error al registrar el Service Worker', err));
+        }
+    </script>
 </body>
 </html>
