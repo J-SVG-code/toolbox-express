@@ -5,6 +5,8 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
+  "description": "Herramientas rápidas y compresor de imágenes sin salir de tu móvil",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "favicon-192x192.png",
